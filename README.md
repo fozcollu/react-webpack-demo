@@ -31,8 +31,7 @@ Kütüphane kodlarını optimization.splitchunks özelliği ile ayrıştırabili
 
 Bir başka optimizasyon yöntemi olan Dynamic import'un 2 farklı kullanımı var. 1-) Modul bazlı 2-) Route bazlı
 ### Modul bazlı dynamic importa örnek olarak aşağıdaki kod verilebilir.
-` 
-const dateModule = () => import("./modules/dateModule");
+` const dateModule = () => import("./modules/dateModule");
 const btn = document.getElementById("btn");
 
 btn.addEventListener("click", () => {
@@ -40,5 +39,4 @@ btn.addEventListener("click", () => {
         document.getElementById('dateContainer').innerHTML = getCurrentDate();
     });
 });.format('MMMM Do YYYY, h:mm:ss a');
-}
-`
+}`
