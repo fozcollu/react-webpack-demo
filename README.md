@@ -42,3 +42,17 @@ btn.addEventListener("click", () => {
 });.format('MMMM Do YYYY, h:mm:ss a');
 }
 `
+
+# Eslint configurationları
+
+`npm install eslint --save-dev` -- Eslint paketi kurulur
+`npx eslint --init` --configuration dosyası yaratılır
+
+### Airbnb configurasyonlarından extend edilmesi
+
+`npx install-peerdeps --dev eslint-config-airbnb` -- airbnb configurationları kurulur
+- Eslint configuration dosyasında `"extends": ["airbnb", "airbnb/hooks"]` değişikliği yapılır.
+- Custom configurationları rules property'si altından yapılabilir.
+
+$ VSCode ile entegre etmek için ESLint extensionu kurulur. 
+$ Prettier extensionu ile de code-format işini hallederiz.

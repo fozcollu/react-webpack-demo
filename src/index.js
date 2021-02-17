@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { render } from "react-dom";
+import React, { useState } from 'react';
+import { render } from 'react-dom';
 
-const dateModule = () => import("./modules/dateModule");
+const dateModule = () => import('./modules/dateModule');
 
 const App = () => {
   const [date, setDate] = useState(undefined);
@@ -19,4 +19,4 @@ const App = () => {
   );
 };
 
-render(<App />, document.getElementById("root"));
+render(<App />, document.getElementById('root'));
